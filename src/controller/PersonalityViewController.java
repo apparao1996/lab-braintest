@@ -38,8 +38,8 @@ public class PersonalityViewController extends HttpServlet {
 		String options=request.getParameter("selectedOptions");
 		
 		System.out.println(options);
-		PersonalityCalculator pc= new PersonalityCalculator();
-        String message= pc.findYourBrainType(options);
+		PersonalityCalculator obj= new PersonalityCalculator();
+        String message= obj.findYourBrainType(options);
 		
 		
 		// create an object for the PersonalityCalculator
